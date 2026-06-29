@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAVAN S Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <h2 class="logo">PAVAN S</h2>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home">
+  <img src="images/profile.jpg" class="profile">
+  <h1>Hi I Am <span>PAVAN S</span></h1>
+  <p>Full Stack Web Developer</p>
+
+  <!-- SOCIAL LINKS -->
+<div class="social-icons">
+
+  <a href="https://github.com/pavankumargiter/pavankumargiter" target="_blank">
+    🐱 GitHub
+  </a>
+
+  <a href="#">LinkedIn</a>
+
+  <a href="#">Instagram</a>
+
+</div>
+
+
+  <!-- BUTTONS -->
+  <div class="buttons">
+
+    <a href="new_Resume.pdf" download class="btn">
+      📄 Download Resume
+    </a>
+
+    <a href="#contact" class="btn">
+      Hire Me
+    </a>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+Hello! My name is Pavan S, and I am a passionate Full Stack Web Developer with strong interest in building modern, responsive, and user-friendly web applications. I have knowledge in HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB. I enjoy creating attractive frontend designs and developing backend functionalities for real-world applications.
+
+Currently, I am focusing on improving my skills in full stack development, problem solving, and software engineering concepts. I have developed projects such as Portfolio Website, E-Commerce Website, Lost & Found System, and PG Rating System. I am a quick learner, hardworking, and always interested in learning new technologies and industry trends.
+
+My goal is to become a successful software developer and contribute to innovative and impactful projects in the IT industry.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <p>HTML</p>
+    <div class="bar"><div style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>CSS</p>
+    <div class="bar"><div style="width:85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><div style="width:80%"></div></div>
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>E-Commerce Website</h3>
+    <p>Built using MERN stack</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>Responsive personal portfolio</p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade">
+  <h2>Contact Me</h2>
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <textarea placeholder="Message"></textarea>
+  <button class="btn">Send</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Pavan S | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

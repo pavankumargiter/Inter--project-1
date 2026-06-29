@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+<title>Register</title>
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+<h1>Register</h1>
+
+<form id="registerForm">
+
+<input type="text" id="name" placeholder="Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="password" id="password" placeholder="Password">
+
+<button type="submit">Register</button>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("registerForm")
+.addEventListener("submit", async(e)=>{
+
+e.preventDefault();
+
+const response = await fetch(
+"http://localhost:5000/register",
+{
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body: JSON.stringify({
+
+name:document.getElementById("name").value,
+
+email:document.getElementById("email").value,
+
+password:document.getElementById("password").value
+
+})
+
+}
+);
+
+const result = await response.json();
+
+alert(result.message);
+
+});
+
+</script>
+
+</body>
+</html>
